@@ -13,10 +13,11 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         Intent intent = getIntent();
-        String a = intent.getStringExtra("N");
-        TextView tv = (TextView) findViewById(R.id.Name);
-        tv.setText(a);
+       // String a = intent.getStringExtra("N");
+        //TextView tv = (TextView) findViewById(R.id.Name);
+        //tv.setText(a);
 
+        String messagename = intent.getStringExtra(MainActivity.Name);
         String messageprogram = intent.getStringExtra(MainActivity.Program);
         String messagecourse = intent.getStringExtra(MainActivity.Course);
         String messagesemester = intent.getStringExtra(MainActivity.Semester);
@@ -24,10 +25,12 @@ public class Main2Activity extends AppCompatActivity {
         TextView textviewprogram = (TextView) findViewById(R.id.Program);
         TextView textviewcourse = (TextView) findViewById(R.id.Course);
         TextView textviewsemester = (TextView) findViewById(R.id.Semester);
+        TextView textviewname = (TextView) findViewById(R.id.Name);
 
         textviewprogram.setText(messageprogram);
         textviewcourse.setText(messagecourse);
         textviewsemester.setText(messagesemester);
+        textviewname.setText(messagename);
 
 
 
