@@ -17,16 +17,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View view){
 
+        String id = "N";
+
         Intent intent = new Intent(this, Main2Activity.class);
         String name = ((TextView) findViewById(R.id.textView)).getText().toString();
-        
+        intent.putExtra(id, name);
+        startActivity(intent);
 
     }
 
-    String name = "Lee Raj";
-    String program = "Software ";
-    String sem = "3rd";
-    String course  = "3429";
+    //String name = "Lee Raj";
+    //String program = "Software ";
+    //String sem = "3rd";
+    //String course  = "3429";
 
     //TextView helloworld = (TextView) findViewById(R.id.helloworldTextView);
 
