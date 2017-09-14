@@ -17,6 +17,21 @@ public class Main2Activity extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.textView);
         tv.setText(a);
 
+        String messageprogram = intent.getStringExtra(MainActivity.Program);
+        String messagecourse = intent.getStringExtra(MainActivity.Course);
+        String messagesemester = intent.getStringExtra(MainActivity.Semester);
+
+        TextView textviewprogram = (TextView) findViewById(R.id.Program);
+        TextView textviewcourse = (TextView) findViewById(R.id.Course);
+        TextView textviewsemester = (TextView) findViewById(R.id.Semester);
+
+        textviewprogram.setText(messageprogram);
+        textviewprogram.setText(messagecourse);
+        textviewprogram.setText(messagesemester);
+
+
+
+
     }
 
 
