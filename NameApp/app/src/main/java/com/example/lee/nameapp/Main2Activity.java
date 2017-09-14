@@ -14,7 +14,7 @@ public class Main2Activity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String a = intent.getStringExtra("N");
-        TextView tv = (TextView) findViewById(R.id.textView);
+        TextView tv = (TextView) findViewById(R.id.Name);
         tv.setText(a);
 
         String messageprogram = intent.getStringExtra(MainActivity.Program);
