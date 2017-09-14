@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String Program = "Program";
     public static final String Course = "Course";
     public static final String Semester = "3";
+    public static final String Name = "Lee Raj";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,19 +22,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View view){
 
-        String id = "Name";
+       // String id = "Name";
         Intent intent = new Intent(this, Main2Activity.class);
-        String name = ((TextView) findViewById(R.id.Name)).getText().toString();
 
-        TextView program = (TextView) findViewById(R.id.Program);
-        TextView course = (TextView) findViewById(R.id.Course);
-        TextView semester = (TextView) findViewById(R.id.Semester);
+        //String name = ((TextView) findViewById(R.id.Name)).getText().toString();
+        //TextView program = (TextView) findViewById(R.id.Program);
+        //TextView course = (TextView) findViewById(R.id.Course);
+       // TextView semester = (TextView) findViewById(R.id.Semester);
+       // String messageprogram = program.getText().toString();
+       // String messagecourse = course.getText().toString();
+       // String messagesemester = semester.getText().toString();
 
-        String messageprogram = program.getText().toString();
-        String messagecourse = course.getText().toString();
-        String messagesemester = semester.getText().toString();
+       // String messageprogram = findViewById(R.id.Name).toString();
+        String messagename = getString(R.string.name);
+        String messageprogram = getString(R.string.program);
+        String messagecourse = getString(R.string.course);
+        String messagesemester = getString(R.string.semester);
 
-        intent.putExtra(id, name);
+
+        intent.putExtra(Name, messagename);
         intent.putExtra(Program,messageprogram);
         intent.putExtra(Course, messagecourse);
         intent.putExtra(Semester, messagesemester);
