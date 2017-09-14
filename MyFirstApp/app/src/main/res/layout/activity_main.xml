@@ -10,13 +10,14 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintLeft_toRightOf="@+id/editText2"
-        tools:text="@string/button_send"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:onClick="sendMessage"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/editText2"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="20dp"
+        tools:text="@string/button_send" />
 
     <EditText
         android:id="@+id/editText2"
