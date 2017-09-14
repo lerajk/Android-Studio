@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">NameApp</string>
     <string name="name">Lee Raj</string>
+    <string name="program">Software</string>
+    <string name="course">3429</string>
+    <string name="semester">3rd</string>
 </resources>
