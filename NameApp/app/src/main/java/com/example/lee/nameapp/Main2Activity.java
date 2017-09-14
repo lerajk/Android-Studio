@@ -26,8 +26,8 @@ public class Main2Activity extends AppCompatActivity {
         TextView textviewsemester = (TextView) findViewById(R.id.Semester);
 
         textviewprogram.setText(messageprogram);
-        textviewprogram.setText(messagecourse);
-        textviewprogram.setText(messagesemester);
+        textviewcourse.setText(messagecourse);
+        textviewsemester.setText(messagesemester);
 
 
 
