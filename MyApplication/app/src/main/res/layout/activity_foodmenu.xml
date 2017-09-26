@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_foodmenu">
 
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back_button"
+        android:text="Back"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="26dp" />
 </android.support.constraint.ConstraintLayout>

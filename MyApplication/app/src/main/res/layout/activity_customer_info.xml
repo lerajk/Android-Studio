@@ -7,38 +7,75 @@
     tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_customerInfo">
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/Name"
         android:ems="10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteY="94dp"
+        tools:layout_editor_absoluteY="86dp"
         tools:layout_editor_absoluteX="68dp" />
 
 
     <EditText
-        android:id="@+id/editTextCreditCard"
-        android:ems="10"
+        android:id="@+id/CreditCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
         android:inputType="textPersonName"
         android:text="Credit Card"
+        app:layout_constraintBottom_toTopOf="@+id/FavoriteChef"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintVertical_bias="0.403"
+        tools:layout_editor_absoluteX="62dp" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address"
         tools:layout_editor_absoluteX="68dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextChef" />
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/FavoriteFood" />
 
 
     <EditText
-        android:id="@+id/editTextChef"
+        android:id="@+id/FavoriteFood"
+        android:layout_width="216dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Favorite Food"
+        tools:layout_editor_absoluteX="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="29dp" />
+
+
+    <EditText
+        android:id="@+id/FavoriteChef"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="favorite Chef"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/Address" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="back_button_two"
+        android:text="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="264dp" />
 
 </android.support.constraint.ConstraintLayout>
