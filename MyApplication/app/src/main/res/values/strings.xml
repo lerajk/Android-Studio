@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LeenoyRajkhowa_COMP304Lab2</string>
+    <string name="italian">Italian</string>
+    <string name="indian">Indian</string>
+    <string name="chinese">Chinese</string>
+    <string name="american">Amercian</string>
+</resources>
