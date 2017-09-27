@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class activity_customerInfo extends AppCompatActivity {
+public class activity_customer_info extends AppCompatActivity {
 
     EditText nameValidation;
 
@@ -30,7 +30,14 @@ public class activity_customerInfo extends AppCompatActivity {
 
     public void back_button_two(View view)
     {
-        Intent intent = new Intent(activity_customerInfo.this, activity_foodmenu.class);
+        Intent intent = new Intent(activity_customer_info.this, activity_foodmenu.class);
+        startActivity(intent);
+    }
+
+
+    public void order_button(View view)
+    {
+        Intent intent = new Intent(activity_customer_info.this, activity_checkout.class);
         startActivity(intent);
     }
 }

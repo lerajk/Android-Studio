@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--
-  <item
-      style="@style/menu_item_style"
-      android:id="@+id/start"
-      android:title="McD!"
-      android:orderInCategory="1"></item>
-
-    <item
-        style="@style/menu_item_style"
-        android:id="@+id/stop"
-        android:title="BurgerKing!"
-        android:orderInCategory="4"></item>
-
-<item
-    style="@style/menu_item_style"
-    android:id="@+id/accel"
-    android:title="Subway!"
-    android:orderInCategory="2"></item>
-
-<item style="@style/menu_item_style"
-    android:id="@+id/decel"
-    android:title="Pizza Pizza!"
-    android:orderInCategory="3"></item></menu> -->
 
 </menu>

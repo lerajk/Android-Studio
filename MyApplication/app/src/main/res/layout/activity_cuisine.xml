@@ -31,18 +31,12 @@
             android:text="@string/chinese" />
 
         <RadioButton
-            android:id="@+id/rdb_brazilian"
+            android:id="@+id/rdb_indian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="@string/indian" />
 
-        <RadioButton
-            android:id="@+id/rdb_mexican"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/italian" />
 
     </RadioGroup>
 

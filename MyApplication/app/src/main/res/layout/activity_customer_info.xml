@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_customerInfo">
+    tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_customer_info">
 
     <EditText
         android:id="@+id/Name"
@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteY="86dp"
-        tools:layout_editor_absoluteX="68dp" />
+        tools:layout_editor_absoluteY="46dp"
+        tools:layout_editor_absoluteX="27dp" />
 
 
     <EditText
@@ -28,19 +28,8 @@
         android:text="Credit Card"
         app:layout_constraintBottom_toTopOf="@+id/FavoriteChef"
         app:layout_constraintTop_toBottomOf="@+id/Name"
-        app:layout_constraintVertical_bias="0.403"
-        tools:layout_editor_absoluteX="62dp" />
-
-    <EditText
-        android:id="@+id/Address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Address"
-        tools:layout_editor_absoluteX="68dp"
-        android:layout_marginBottom="66dp"
-        app:layout_constraintBottom_toTopOf="@+id/FavoriteFood" />
+        app:layout_constraintVertical_bias="0.281"
+        tools:layout_editor_absoluteX="27dp" />
 
 
     <EditText
@@ -50,9 +39,24 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Favorite Food"
-        tools:layout_editor_absoluteX="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="29dp" />
+        android:layout_marginBottom="132dp"
+        android:layout_marginLeft="27dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/FavoriteFood" />
+
 
 
     <EditText
@@ -64,9 +68,8 @@
         android:text="favorite Chef"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/Address" />
+        app:layout_constraintHorizontal_bias="0.159"
+        tools:layout_editor_absoluteY="189dp" />
 
     <Button
         android:id="@+id/button3"
@@ -77,5 +80,14 @@
         android:text="Back"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="264dp" />
+
+    <Button
+        android:id="@+id/OrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="order_button"
+        android:text="Order"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="418dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -7,6 +7,19 @@
     tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_foodmenu">
 
 
+    <include
+        android:id="@+id/first_item"
+        layout="@layout/menu_item" />
+
+    <include
+        android:id="@+id/second_item"
+        layout="@layout/menu_item" />
+
+    <include
+        android:id="@+id/third_item"
+        layout="@layout/menu_item" />
+
+
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
@@ -15,4 +28,16 @@
         android:text="Back"
         tools:layout_editor_absoluteX="232dp"
         tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn_submit"
+        android:text="Submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="414dp" />
+
+
 </android.support.constraint.ConstraintLayout>

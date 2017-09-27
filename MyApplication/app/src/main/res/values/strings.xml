@@ -4,4 +4,61 @@
     <string name="indian">Indian</string>
     <string name="chinese">Chinese</string>
     <string name="american">Amercian</string>
+
+
+    <!--American-->
+
+    <string name="mc_d">McD</string>
+    <string name="big_mac">Big Mac</string>
+    <string name="mc_chicken">McChicken</string>
+    <string name="fish_fillet">Fish Fillet</string>
+
+    <string name="five_guys">Five Guys</string>
+    <string name="veg_burger">Veg Burger</string>
+    <string name="chicken_burger">Chicken Burger</string>
+    <string name="beef_burger">Beef Burger</string>
+
+
+    <string name="pizza_pizza">Pizza Pizza</string>
+    <string name="peperoni">Peperoni</string>
+    <string name="cheese">Cheeze</string>
+    <string name="chicken">Chicken </string>
+
+
+    <!--Indian-->
+
+    <string name="sheer">Sheer Punjab</string>
+    <string name="tandoori">Tandoori</string>
+    <string name="tikka">Tikka Masala</string>
+    <string name="curry">Curry</string>
+
+    <string name="biriyani">Laziz Biriyani</string>
+    <string name="kabob">Kabob</string>
+    <string name="rice"> Rice</string>
+    <string name="dal">Dal</string>
+
+
+    <string name="mugal_mahal">Mugal Mahal</string>
+    <string name="kofta">kofta</string>
+    <string name="paneer">Paneer Makhani</string>
+    <string name="kheer">Kheer </string>
+
+
+    <!--Chinese-->
+
+    <string name="Pho">Pho Garden</string>
+    <string name="soup">Soup</string>
+    <string name="spring_roll">Spring Rolls</string>
+    <string name="tofu">Tofu Curry</string>
+
+    <string name="Phung">Phung Lo</string>
+    <string name="red_curry">Red Curry</string>
+    <string name="green_curry"> Green Curry</string>
+    <string name="basil">Basil Curry</string>
+
+
+    <string name="Tik">Tik Long</string>
+    <string name="jasmine">Jasmine Rice</string>
+    <string name="bean">Bean Curry</string>
+    <string name="noddle">Noodles </string>
 </resources>
