@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class activity_foodmenu extends AppCompatActivity {
 
@@ -20,6 +21,11 @@ public class activity_foodmenu extends AppCompatActivity {
     private String menu_Item_Two;
     private String menu_Item_Third;
 
+    private TextView food_Display_One;
+    private TextView food_Display_Two;
+    private TextView food_Display_Three;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +35,11 @@ public class activity_foodmenu extends AppCompatActivity {
         Food_One = findViewById(R.id.first_item);
         Food_Two = findViewById(R.id.second_item);
         Food_Three = findViewById(R.id.third_item);
+
+        food_Display_One = (TextView) Food_One.findViewById(R.id.food_item);
+        food_Display_Two = (TextView) Food_Two.findViewById(R.id.food_item);
+        food_Display_Three = (TextView) Food_Three.findViewById(R.id.food_item);
+
 
         intent = getIntent();
         Cusine_id = intent.getIntExtra("Cusine_id", 0);
@@ -160,5 +171,13 @@ public class activity_foodmenu extends AppCompatActivity {
     {
         Intent intent = new Intent(this, activity_customer_info.class);
         startActivity(intent);
+
+        food_Display_One.setText(menu_Item_One);
+        food_Display_Two.setText(menu_Item_Two);
+        food_Display_Two.setText(menu_Item_Two);
+
     }
+
+
+
 }
