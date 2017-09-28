@@ -42,7 +42,7 @@ public class activity_foodmenu extends AppCompatActivity {
 
 
         intent = getIntent();
-        Cusine_id = intent.getIntExtra("Cusine_id", 0);
+        Cusine_id = intent.getIntExtra("cuisine_id", 0);
 
     }
 
