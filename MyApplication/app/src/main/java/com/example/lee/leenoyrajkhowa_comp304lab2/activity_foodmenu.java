@@ -92,9 +92,7 @@ public class activity_foodmenu extends AppCompatActivity {
 
         }
 
-        food_Display_One.setText(menu_Item_One);
-        food_Display_Two.setText(menu_Item_Two);
-        food_Display_Two.setText(menu_Item_Two);
+
 
     }
 
@@ -163,6 +161,10 @@ public class activity_foodmenu extends AppCompatActivity {
             }
 
         }
+
+        food_Display_One.setText(menu_Item_One);
+        food_Display_Two.setText(menu_Item_Two);
+        food_Display_Two.setText(menu_Item_Two);
     }
 
     public void back_button(View view)
