@@ -50,7 +50,7 @@ public class activity_foodmenu extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_menu, menu);
         setMenu(Cusine_id, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
