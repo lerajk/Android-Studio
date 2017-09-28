@@ -1,85 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_customer_info">
 
-    <EditText
-        android:id="@+id/Name"
-        android:ems="10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteY="46dp"
-        tools:layout_editor_absoluteX="27dp" />
-
-
-    <EditText
-        android:id="@+id/CreditCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Credit Card"
-        app:layout_constraintBottom_toTopOf="@+id/FavoriteChef"
-        app:layout_constraintTop_toBottomOf="@+id/Name"
-        app:layout_constraintVertical_bias="0.281"
-        tools:layout_editor_absoluteX="27dp" />
-
-
-    <EditText
-        android:id="@+id/FavoriteFood"
-        android:layout_width="216dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Favorite Food"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="132dp"
-        android:layout_marginLeft="27dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
-    <EditText
-        android:id="@+id/Address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Address"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
-        android:layout_marginBottom="29dp"
-        app:layout_constraintBottom_toTopOf="@+id/FavoriteFood" />
-
-
-
-    <EditText
-        android:id="@+id/FavoriteChef"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="favorite Chef"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
-        tools:layout_editor_absoluteY="189dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:onClick="back_button_two"
         android:text="Back"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="264dp" />
+        tools:layout_editor_absoluteX="264dp"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/FavoriteChef"
+        android:layout_alignStart="@+id/FavoriteChef" />
 
     <Button
         android:id="@+id/OrderButton"
@@ -88,6 +27,74 @@
         android:onClick="order_button"
         android:text="Order"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:layout_editor_absoluteY="418dp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/OrderButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/OrderButton"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_alignStart="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CreditCard" />
+
+    <EditText
+        android:id="@+id/FavoriteFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="FavoriteFood" />
+
+    <EditText
+        android:id="@+id/FavoriteChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/FavoriteFood"
+        android:layout_alignStart="@+id/FavoriteFood"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="FavoriteChef" />
+
+</RelativeLayout>

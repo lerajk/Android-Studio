@@ -9,6 +9,12 @@ import android.widget.EditText;
 public class activity_customer_info extends AppCompatActivity {
 
     EditText nameValidation;
+    EditText CreditCardValidation;
+    EditText AddressValidation;
+    EditText FavoriteChefValidation;
+    EditText FavoriteFoodValidation;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +22,50 @@ public class activity_customer_info extends AppCompatActivity {
         setContentView(R.layout.activity_customer_info);
 
         nameValidation = (EditText) findViewById(R.id.Name);
+        CreditCardValidation = (EditText) findViewById(R.id.CreditCard);
+        AddressValidation = (EditText) findViewById(R.id.Address);
+        FavoriteChefValidation = (EditText) findViewById(R.id.FavoriteChef);
+        FavoriteFoodValidation = (EditText) findViewById(R.id.FavoriteFood);
+
+        CreditCardValidation.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(CreditCardValidation.getText().length()<8){
+                    CreditCardValidation.setError("Enter more than 8 characters");
+                }
+            }
+        });
+
+        AddressValidation.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(AddressValidation.getText().length()<8){
+                    AddressValidation.setError("Enter more than 8 characters");
+                }
+            }
+        });
+
+        FavoriteFoodValidation.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(FavoriteFoodValidation.getText().length()<8){
+                    FavoriteFoodValidation.setError("Enter more than 8 characters");
+                }
+            }
+        });
+
+        AddressValidation.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(AddressValidation.getText().length()<8){
+                    AddressValidation.setError("Enter more than 8 characters");
+                }
+            }
+        });
 
         nameValidation.setOnFocusChangeListener(new View.OnFocusChangeListener(){
 
