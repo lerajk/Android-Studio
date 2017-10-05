@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.example.lee.leenoyrajkhowa_comp304lab2.activity_foodmenu"
+    android:weightSum="1">
+
+
+    <include
+        android:id="@+id/first_item"
+        layout="@layout/menu_item"
+        android:layout_width="380dp"
+        android:layout_height="75dp" />
+
+    <include
+        android:id="@+id/second_item"
+        layout="@layout/menu_item"
+        android:layout_width="404dp"
+        android:layout_height="73dp" />
+
+    <include
+        android:id="@+id/third_item"
+        layout="@layout/menu_item"
+        android:layout_width="399dp"
+        android:layout_height="94dp" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back_button"
+        android:text="Back"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0.07"
+        android:onClick="btn_submit"
+        android:text="Submit" />
+
+
+</LinearLayout>
