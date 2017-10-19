@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">LeeRaj_COMP304Lab3</string>
+    <string name="thickness">Thickness</string>
+    <string name="color">color</string>
+
+    <string-array name="thick_array">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="color_array">
+        <item>red</item>
+        <item>blue</item>
+        <item>green</item>
+    </string-array>
 </resources>
